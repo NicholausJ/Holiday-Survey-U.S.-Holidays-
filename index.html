@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" itemprop="charset">
+  <meta name="viewport" content="width=device-width, initial-scale=1" itemprop="viewmeta">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <h1 id="title" style="font-family:Palatino Linotype;color:#FFF">Holiday Survey</h1>
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-10" style="">
+        <div class="well">
+          <p id="description" style="text-align:center"><b>Take a Survey on your favorite holiday!</b></p>
+          <form id="survey-form" action="" style="text-align:center">
+            <div class="row" id="tableRow1">
+              <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+                <input type="text" name="name" id="name" placeholder=" Your full name.." required>
+              </div>
+            </div>
+            <div class="row" id="tableRow2">
+              <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+                <input type="email" name="email" id="email" placeholder=" Your email.." required>
+              </div>
+            </div>
+            <div class="row" id="tableRow3">
+              <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+                <input type="number" name="age" id="number" min="1" max="150" placeholder=" Your Age..">
+              </div>
+            </div>
+            <div class="row" id="tableRow4">
+              <div class="labels">
+                <p><b>What is your favorite season? </b></p>
+                <label for="winter"><input id="winter" type="radio" value="1" name="seasons"> Winter</label><br>
+                <label for="spring"><input id="spring" type="radio" value="2" name="seasons"> Spring</label><br>
+                <label for="summer"><input id="summer" type="radio" value="3" name="seasons"> Summer</label><br>
+                <label for="fall"><input id="fall" type="radio" value="4" name="seasons"> Fall</label><br>
+              </div>
+            </div>
+            <div class="row" id="tableRow5">
+              <div class="labels">
+                <label for="enthusiasm">What is your favorite holiday?</label>
+                <div class="">
+                  <select id="dropdown" name="favorite" class="dropdown">
+                    <option disabled value>Select One..</option>
+                    <option value="new">New Year's</option>
+                    <option value="valentine">Valentine's Day</option>
+                    <option value="patrick">St. Patrick's Day</option>
+                    <option value="easter">Easter</option>
+                    <option value="ramadan">Ramadan</option>
+                    <option value="mother">Mother's Day</option>
+                    <option value="memorial">Memorial Day</option>
+                    <option value="father">Father's Day</option>
+                    <option value="independence">Independence Day</option>
+                    <option value="halloween">Halloween</option>
+                    <option value="diwali">Diwali</option>
+                    <option value="verteran">Veteran's Day</option>
+                    <option value="thanksgiving">Thanksgiving</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="high">High Holy Days</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <p>Note: If your favorite is not listed please mark other and mention it in the comments section. Thank you
+                    <p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" id="tableRow6">
+              <div class="labels">
+                <p><b>What are some of your favorite things about this holiday?</b></p>
+                <label for="family"><input id="family" type="checkbox" value="2" name="things"> Family</label><br>
+                <label for="time"><input id="time" type="checkbox" value="2" name="things"> Time Off</label><br>
+                <label for="decor"><input id="decor" type="checkbox" value="3" name="things"> Decoration</label><br>
+                <label for="all"><input id="all" type="checkbox" value="1" name="things"> Everything</label><br>
+              </div><br>
+            </div>
+            <div class="row" id="tableRow7">
+              <div class="labels">
+                <label for="excite">How excited are you for this holiday?</label>
+                <div class="">
+                  <select id="dropdown2" name="excite" class="dropdown">
+                  <option disabled value>Select an option</option>
+                  <option value="hobbyist">Hobbyist</option>
+                  <option value="buff">Buff</option>
+                  <option value="devotee">Devotee</option>
+                  <option value="enthusiast">Bonkers</option>
+                  <option value="other">Other</option>
+                </select><br>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="row" id="tableRow8">
+              <p><b>Share your comments here..<br></b></p>
+            </div>
+            <div class="row" id="tableRow9">
+              <br><textarea rows="3" cols="30" placeholder="Comments"></textarea>
+            </div><br>
+            <div class="row" id="tableRow10">
+              <div class="labels">
+                <p><b>Please take a second to rate this survey.. </b></p>
+                <label for="one"><span class="fa fa-star checked"></span></span></label>
+                <label for="two"><span class="fa fa-star checked"></span></label>
+                <label for="three"><span class="fa fa-star checked"></span></label>
+                <label for="four"><span class="fa fa-star checked"></span></label>
+                <label for="five"><span class="fa fa-star checked"></span></label>
+                <label for="six"><span class="fa fa-star checked"></span></label>
+              </div>
+            </div>
+            <div class="row" id="tableRow11">
+              <button type="submit" id="submit">Submit</button><br>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="col-xs-1">
+      </div>
+
+    </div>
+    <hr id="horizontal-line"></hr>
+    <div id="reference">This pen was created by <a href="https://github.com/NicholausJ"><b>NicholausJ</b></a> for <b><a href="" id="" target="_blank">freeCodeCamp</a></b>.
+    </div>
+  </div>
+</body>
+
+</html>
